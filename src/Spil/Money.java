@@ -2,8 +2,8 @@ package Spil;
 
 public class Money {
 
-    public int money;
-    money == 1000;
+    public int money=1000;
+
 
     private Die die1;
     private Die die2;
