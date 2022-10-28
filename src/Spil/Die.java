@@ -2,7 +2,7 @@ package Spil;
 
 public class Die {
 
-    private int faceValue;
+    public int faceValue;
 
     public Die(){
         this.faceValue=1;

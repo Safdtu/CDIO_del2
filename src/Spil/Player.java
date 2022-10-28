@@ -4,16 +4,16 @@ public class Player {
 
     private String navn;
 
-    private int money;
+    public int money;
 
-    public Player (String navn, int money){
-        this.navn=navn;
-        this.money=money;
+    public void addMoney(int addMoney){
+        money += addMoney;
     }
 
-    public void addScore(int dice1, int dice2){
-        int sum = dice1 + dice2;
-        money = sum + money;
+
+    public Player (String navn, int addMoney){
+        this.navn=navn;
+        this.money=addMoney;
     }
 
     public void setNavn(String newNavn) { navn = newNavn;}
@@ -21,6 +21,4 @@ public class Player {
     public String getNavn() {return navn;}
 
     public int getMoney(){return money;}
-
-
 }
